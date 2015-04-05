@@ -17,7 +17,7 @@ Năm lệnh dưới đây dùng để sửa một số lỗi khi cài Sahara mà
     cd sahara-venv
     source bin/activate
     easy_install MySQL-python
-
+#### Cấu hình
 Tạo thư mục chứa file config và file log của sahara:
 
     mkdir /etc/sahara
@@ -26,8 +26,6 @@ Tạo thư mục chứa file config và file log của sahara:
 Có 2 file config mẫu là: sahara.conf.sample-basic và sahara.conf.sample. Ở đây mình dùng file sahara.conf.sample-basic:
     
     cp sahara-venv/share/sahara/sahara.conf.sample-basic /etc/sahara/sahara.conf
-
-#### Cấu hình
 
     nano /etc/sahara/sahara.conf
     
