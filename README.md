@@ -91,6 +91,3 @@ Có 2 file config mẫu là: sahara.conf.sample-basic và sahara.conf.sample. �
 Vào horizon kiểm tra. Ta sẽ thấy có thêm 1 tab là "Data Processing". Xong!
 
 ![Install Sahara Ok](https://raw.githubusercontent.com/datts68/openstack-sahara/master/images/datts68_sahara_01.png)
-
-#### Tham khảo
-http://docs.openstack.org/developer/sahara/userdoc/installation.guide.html
