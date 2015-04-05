@@ -57,18 +57,18 @@ Có 2 file config mẫu là: sahara.conf.sample-basic và sahara.conf.sample. �
     [database]
     connection = sqlite:////tmp/sahara.db
 
-#### Tạo database
-    mysql -u root -p
-        CREATE DATABASE sahara;
-        GRANT ALL PRIVILEGES ON sahara.* TO 'sahara'@'localhost' IDENTIFIED BY $pass_db_sahara;
-        GRANT ALL PRIVILEGES ON sahara.* TO 'sahara'@'%' IDENTIFIED BY $pass_db_sahara;
-        
-#### Sửa file my.sql
+Sửa file my.sql
     nano /etc/mysql/my.cnf
         [mysqld]
         max_allowed_packet = 256M
 
     service mysql restart
+
+#### Tạo database
+    mysql -u root -p
+        CREATE DATABASE sahara;
+        GRANT ALL PRIVILEGES ON sahara.* TO 'sahara'@'localhost' IDENTIFIED BY $pass_db_sahara;
+        GRANT ALL PRIVILEGES ON sahara.* TO 'sahara'@'%' IDENTIFIED BY $pass_db_sahara;
 
 #### Đồng bộ, khởi tạo
     sahara-venv/bin/sahara-db-manage --config-file /etc/sahara/sahara.conf upgrade head
