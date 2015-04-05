@@ -10,7 +10,7 @@ Giả sử ta đã cài đặt thành công Openstack. Ở đây mình cài bả
     sahara-venv/bin/pip install sahara
 Hoặc bạn có thể chọn các phiên bản khác tại: http://tarballs.openstack.org/sahara/
 
-Năm lệnh dưới đây dùng để sửa một số lỗi khi cài Sahara mà mình gặp phải. Rất mong nhận được phản hồi từ mọi người về các lỗi gặp phải tại: https://github.com/datts68/openstack-sahara/issues
+Năm lệnh dưới đây để khắc phục một số lỗi khi cài Sahara mà mình gặp phải. Rất mong nhận được phản hồi từ mọi người về các lỗi khác tại: https://github.com/datts68/openstack-sahara/issues
 
     sudo apt-get install libmysqlclient-dev
     sahara-venv/bin/pip install mysql-python
@@ -58,6 +58,7 @@ Có 2 file config mẫu là: sahara.conf.sample-basic và sahara.conf.sample. �
     connection = sqlite:////tmp/sahara.db
 
 Sửa file my.sql
+
     nano /etc/mysql/my.cnf
         [mysqld]
         max_allowed_packet = 256M
