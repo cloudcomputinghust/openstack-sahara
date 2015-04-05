@@ -10,7 +10,7 @@ Giả sử ta đã cài đặt thành công Openstack. Ở đây mình cài bả
     sahara-venv/bin/pip install sahara
 Hoặc bạn có thể chọn các phiên bản khác tại: http://tarballs.openstack.org/sahara/
 
-So với docs Openstack cung cấp, 5 lệnh dưới đây dùng để sửa một số lỗi khi cài Sahara mà mình gặp phải. Rất mong nhận được phản hồi từ mọi người về các lỗi gặp phải tại https://github.com/datts68/openstack-sahara/issues
+Năm lệnh dưới đây dùng để sửa một số lỗi khi cài Sahara mà mình gặp phải. Rất mong nhận được phản hồi từ mọi người về các lỗi gặp phải tại: https://github.com/datts68/openstack-sahara/issues
 
     sudo apt-get install libmysqlclient-dev
     sahara-venv/bin/pip install mysql-python
@@ -23,7 +23,7 @@ Tạo thư mục chứa file config và file log của sahara:
     mkdir /etc/sahara
     mkdir /var/log/sahara
 
-Có 2 file config mẫu là: sahara.conf.sample-basic và sahara.conf.sample. Ở đây mình dùng file sahara.conf.sample-basic
+Có 2 file config mẫu là: sahara.conf.sample-basic và sahara.conf.sample. Ở đây mình dùng file sahara.conf.sample-basic:
     
     cp sahara-venv/share/sahara/sahara.conf.sample-basic /etc/sahara/sahara.conf
 
@@ -88,8 +88,9 @@ Có 2 file config mẫu là: sahara.conf.sample-basic và sahara.conf.sample. �
     sahara-venv/bin/sahara-all --config-file /etc/sahara/sahara.conf
 
 #### Kiểm tra
-Vào horizon kiểm tra. Ta sẽ thấy có thêm 1 tab là "Data Processing". Xong :)
-![Install Sahara Ok]()
+Vào horizon kiểm tra. Ta sẽ thấy có thêm 1 tab là "Data Processing". Xong!
+
+![Install Sahara Ok](https://raw.githubusercontent.com/datts68/openstack-sahara/master/images/datts68_sahara_01.png)
 
 #### Tham khảo
 http://docs.openstack.org/developer/sahara/userdoc/installation.guide.html
