@@ -12,7 +12,7 @@ Hoặc bạn có thể chọn các phiên bản khác tại: http://tarballs.ope
 
 Năm lệnh dưới đây để khắc phục một số lỗi khi cài Sahara mà mình gặp phải. Rất mong nhận được phản hồi từ mọi người về các lỗi khác tại: https://github.com/datts68/openstack-sahara/issues
 
-    sudo apt-get install libmysqlclient-dev
+    apt-get install libmysqlclient-dev
     sahara-venv/bin/pip install mysql-python
     cd sahara-venv
     source bin/activate
